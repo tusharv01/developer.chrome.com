@@ -194,7 +194,7 @@ function updateFiltersAttribute() {
 }
 
 function addMobileListeners() {
-  /** @type {HTMLDialogElement|null} */
+  /** @ts-ignore {HTMLDialogElement|null} */
   const filters = document.querySelector('#mobile-filters');
   const opener = document.querySelector('#mobile-filters-opener');
   const done = document.getElementById('mobile-filters-done');
