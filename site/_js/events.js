@@ -255,3 +255,17 @@ function restart() {
   if (upcomingEvents) upcomingEvents.restart();
   if (pastEvents) pastEvents.restart();
 }
+// @ts-ignore
+const filters = document.querySelector('#mobile-filters');
+
+// ...
+
+// @ts-ignore
+opener?.addEventListener('click', () => filters.showModal());
+
+// ...
+
+function closeFiltersModal() {
+  // @ts-ignore
+  filters?.close();
+}
